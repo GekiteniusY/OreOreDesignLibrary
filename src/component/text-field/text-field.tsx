@@ -13,13 +13,13 @@ interface TextFieldProps {
 // font-size: 0.875rem; text-sm
 // font-weight: medium; font-medium
 // color: #1a202c; ext-gray-900
-const TextFieldLabelCss = css`
-  display: block;
-  margin-bottom: 2px;
-  font-size: 0.875rem;
-  font-weight: medium;
-  color: #1a202c;
-`;
+const TextFieldLabelCss = css({
+  display: "block",
+  marginBottom: "2px",
+  fontSize: "0.875rem",
+  fontWeight: "medium",
+  color: "#1a202c",
+});
 
 // background-color: #f9fafb; /* bg-gray-50 */
 // border: 1px solid #d2d6dc; /* border-gray-300 */
@@ -34,21 +34,21 @@ const TextFieldLabelCss = css`
 // display: block;
 // width: 100%; /* w-full */
 // padding: 0.625rem; /* p-2.5 */
-const TextFieldInputCss = css`
-  background-color: #f9fafb;
-  border: 1px solid #d2d6dc;
-  color: #1a202c;
-  font-size: 0.875rem;
-  border-radius: 0.375rem;
-  focus: {
-    outline: none;
-    ring: 2px solid #3b82f6;
-    border: 1px solid #3b82f6;
-  }
-  display: block;
-  width: 100%;
-  padding: 0.625rem;
-`;
+const TextFieldInputCss = css({
+  backgroundColor: "#f9fafb",
+  border: "1px solid #d2d6dc",
+  color: "#1a202c",
+  fontSize: "0.875rem",
+  borderRadius: "0.375rem",
+  "&:focus": {
+    outline: "none",
+    ring: "2px solid #3b82f6",
+    border: "1px solid #3b82f6",
+  },
+  display: "block",
+  width: "100%",
+  padding: "0.625rem",
+});
 
 export const TextField: React.FC<TextFieldProps> = ({
   htmlFor,
