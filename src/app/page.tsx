@@ -1,5 +1,5 @@
-import { MoveArrow } from "@/component/symbol/arrow";
-import { Grid } from "@/layout/grid/grid";
+import { MoveArrow } from "../../component/symbol/arrow";
+import { Grid } from "../../layout/grid/grid";
 import Image from "next/image";
 
 export default function Home() {
