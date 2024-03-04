@@ -11,7 +11,13 @@ const GalleryButton = () => {
         </button>
       </div>
       <div>
-        <button></button>
+        <p>
+          bg-white text-black py-2 px-4 rounded-full border border-gray-300
+          shadow
+        </p>
+        <button className='bg-white text-black py-2 px-4 rounded-full border border-gray-300 shadow'>
+          Button text
+        </button>
       </div>
       <div></div>
       <div></div>
