@@ -7,14 +7,15 @@ export default function Home() {
       </header>
 
       {/* navigation */}
-      <nav className='flex'>
-        <ul>
-          <li>Home</li>
-          <li>Atomic Design</li>
-          <li>Cache Strategy</li>
-          <li>Next.js Rendering Types</li>
-          <li>TailwindCSS</li>
+      <nav className='flex p-3'>
+        <ul className='flex'>
+          <li className='ml-1'>Home</li>
+          <li className='ml-4'>Atomic Design</li>
+          <li className='ml-4'>Cache Strategy</li>
+          <li className='ml-4'>Next.js Rendering Types</li>
+          <li className='ml-4'>TailwindCSS</li>
         </ul>
+        <p className='ml-10 bg-slate-400'>なにかいれるかも</p>
       </nav>
 
       {/* main content */}
@@ -31,11 +32,18 @@ export default function Home() {
           </p>
         </div>
 
-        <h2>Next.js Rendering Types</h2>
-        <h2>TailwindCSS</h2>
+        <div className='m-7 bg-green-400'>
+          <h2>Next.js Rendering Types</h2>
+          <p>Next.jsのレンダリング種別についてまとめたページ</p>
+        </div>
+
+        <div className='m-7 bg-green-400'>
+          <h2>TailwindCSS</h2>
+          <p>TailwindCSSのサンプルコンポーネントのページ</p>
+        </div>
 
         {/* aside contents */}
-        <aside>nothing</aside>
+        <aside>THIS IS ASIDE CONTENTS</aside>
       </main>
     </>
   );
