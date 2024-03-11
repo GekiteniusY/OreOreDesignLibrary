@@ -20,7 +20,27 @@ export default function RootLayout({
         <meta charSet='utf-8' />
         <meta title='Ore Ore Play Ground' />
       </head>
-      <body className={`${inter.className}`}>{children}</body>
+      <body className={`${inter.className}`}>
+        {/* main header */}
+        <header className='block justify-center items-center w-full'>
+          <h1 className='bg-blue-300 h-10'>
+            This site is a personal playground.
+          </h1>
+
+          {/* navigation */}
+          <nav className='flex justify-start items-center h-10 bg-red-300'>
+            <ul className='flex'>
+              <li className='ml-1'>Home</li>
+              <li className='ml-4'>Atomic Design</li>
+              <li className='ml-4'>Cache Strategy</li>
+              <li className='ml-4'>Next.js Rendering Types</li>
+              <li className='ml-4'>TailwindCSS</li>
+            </ul>
+            <p className='ml-10 bg-slate-400'>なにかいれるかも</p>
+          </nav>
+        </header>
+        {children}
+      </body>
     </html>
   );
 }
