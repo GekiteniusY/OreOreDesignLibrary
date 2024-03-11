@@ -18,8 +18,19 @@ export default function Home() {
         <p className='ml-10 bg-slate-400'>なにかいれるかも</p>
       </nav>
 
+      {/* aside contents */}
+      <aside className='mx-4'>
+        Notice
+        <div>THIS SITE IS UNDER CONSTRUCTION</div>
+        <ul className='block'>
+          <li className='ml-4'>Notice1</li>
+          <li className='ml-4'>Notice2</li>
+          <li className='ml-4'>Notice3</li>
+        </ul>
+      </aside>
+
       {/* main content */}
-      <main className='block bg-gray-300'>
+      <main className='block mx-4 bg-gray-300'>
         <div className='mt-7 box-content bg-cyan-700'>
           <h2>Atomic Design</h2>
           <p>Atomic Designのコンポーネントをまとめたページ</p>
@@ -42,9 +53,6 @@ export default function Home() {
           <h2>TailwindCSS</h2>
           <p>TailwindCSSのサンプルコンポーネントのページ</p>
         </div>
-
-        {/* aside contents */}
-        <aside>THIS IS ASIDE CONTENTS</aside>
       </main>
     </>
   );

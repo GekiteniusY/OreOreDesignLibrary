@@ -20,7 +20,7 @@ export default function RootLayout({
         <meta charSet='utf-8' />
         <meta title='Ore Ore Play Ground' />
       </head>
-      <body className={`${inter.className} mx-4`}>{children}</body>
+      <body className={`${inter.className}`}>{children}</body>
     </html>
   );
 }
