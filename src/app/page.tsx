@@ -20,16 +20,13 @@ export default function Home() {
         </div>
 
         <div className='mt-7 bg-green-400'>
-          <h2>Cache Strategy</h2>
+          <h2>Next.js</h2>
           <p>
-            ReactおよびNext.js（App
-            Router）のキャッシュ戦略についてまとめたページ
+            Next.jsのいろいろについてまとめたページ <br />
+            Cache Strategy: ReactおよびNext.js（App Router）のキャッシュ戦略{" "}
+            <br />
+            Rendering Types: レンダリング種別
           </p>
-        </div>
-
-        <div className='mt-7 bg-green-400'>
-          <h2>Next.js Rendering Types</h2>
-          <p>Next.jsのレンダリング種別についてまとめたページ</p>
         </div>
 
         <div className='mt-7 bg-green-400'>
