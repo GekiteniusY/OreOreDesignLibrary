@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Children } from "react";
-import Link from "next/link";
-import NavigationText from "../../component/atoms/text-hovered-color";
 import LinkNavigationMenu from "../../component/molecules/link_navigation_menu";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,16 +23,14 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className}`}>
         {/* main header */}
-        <header className='block justify-center items-center w-full'>
-          <h1 className='bg-blue-300 h-10'>
-            This site is a personal playground.
-          </h1>
+        <header className='block justify-center items-center w-full bg-slate-600'>
+          <h1 className=' h-10'>This site is a personal playground.</h1>
 
           {/* navigation */}
           {/* TODO：マウスホバー時の色を調整する */}
           {/* TODO：どのページにいるかでエフェクトを追加する（Github参考） */}
-          {/* TODO：Navigationメニューとメインコンテンツとの境界線を示す罫線を追加する */}
-          <nav className='flex justify-start items-center h-10 bg-red-300'>
+          {/* TODO：Navigationメニューとメインコンテンツとの境界線を示す罫線を自然な色にする、影を追加する？ */}
+          <nav className='flex justify-start items-center py-1 h-auto border-b border-gray-400 '>
             <ul className='flex pl-2'>
               <LinkNavigationMenu link={"/"}>Home</LinkNavigationMenu>
               <LinkNavigationMenu link={"/nextjs"}>Next.js</LinkNavigationMenu>
