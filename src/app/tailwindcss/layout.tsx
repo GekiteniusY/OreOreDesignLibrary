@@ -1,5 +1,26 @@
 import Link from "next/link";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <div className='flex max-w-screen-2xl mx-auto px-4'>
+        <div className='hidden lg:block overflow-y-auto px-10 pt-7'>
+          <div className='flex w-auto h-10 bg-red-300 opacity-80'>
+            {/* TODO: TailwindCSS配下で全文検索機能を追加する */}
+            全文検索の検索ボックス
+          </div>
+          <div>
+            <Link href={"/tailwindcss/layout"}>Layout</Link>
+          </div>
+          <div>
+            <Link href={"/tailwindcss/effects"}>Effects</Link>
+          </div>
+          <div>
+            <Link href={"/tailwindcss/animation"}>Animation</Link>
+          </div>
+        </div>
+        <div>{children}</div>
+      </div>
+    </>
+  );
 }
