@@ -4,7 +4,8 @@ import React from "react";
 const Layout = () => {
   return (
     <div>
-      Layout
+      <h1 className='text-5xl'>Layout</h1>
+      <br />
       <div>
         <Link href={"/tailwindcss/layout/box_decoration_break"}>
           box-decoration-break: 複数行要素のレンダリングオプション

@@ -5,7 +5,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <>
       <div className='flex max-w-screen-2xl mx-auto px-4'>
         <div className='hidden lg:block overflow-y-auto px-10 pt-7'>
-          <div className='flex w-auto h-10 bg-red-300 opacity-80'>
+          <div className='flex w-60 h-10 bg-red-300 opacity-80 text-nowrap'>
             {/* TODO: TailwindCSS配下で全文検索機能を追加する */}
             全文検索の検索ボックス
           </div>
@@ -19,7 +19,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <Link href={"/tailwindcss/animation"}>Animation</Link>
           </div>
         </div>
-        <div>{children}</div>
+        <div className='block w-full px-10 pt-7'>{children}</div>
       </div>
     </>
   );

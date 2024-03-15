@@ -1,9 +1,16 @@
 const TailwindCSS = () => {
   return (
-    <div className='block px-10  w-auto h-80 pt-7'>
-      <div className='flex w-auto bg-blue-400'>
-        texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
-      </div>
+    <div className='w-full bg-blue-400'>
+      <h1 className='text-5xl'>TailwindCSS playground</h1>
+      <br />
+      <p>TailwindCSSの各種パラメータのハンズオンなどを行う</p>
+
+      <h2>参考にしたサイトなど</h2>
+      <ul>
+        <li>サイト1</li>
+        <li>サイト1</li>
+        <li>サイト1</li>
+      </ul>
     </div>
   );
 };
