@@ -16,7 +16,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <Link href={"/tailwindcss/effects"}>Effects</Link>
           </div>
           <div>
-            <Link href={"/tailwindcss/animation"}>Animation</Link>
+            <Link href={"/tailwindcss/transitions_and_animations"}>
+              Transitions and Animations
+            </Link>
+          </div>
+          <div>
+            <Link href={"/tailwindcss/filters"}>Filters</Link>
           </div>
         </div>
         <div className='block w-full px-10 pt-7'>{children}</div>
