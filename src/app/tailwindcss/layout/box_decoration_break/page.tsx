@@ -5,7 +5,7 @@ const BoxDecorationBreak = () => {
   return (
     <>
       <p>
-        'Hello'、'World'が個別のブロックであるかのようにレンダリングされている
+        &apos;Hello&apos;、&apos;World&apos;が個別のブロックであるかのようにレンダリングされている
       </p>
       <span className='box-decoration-slice bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2 ...'>
         Hello
@@ -13,7 +13,7 @@ const BoxDecorationBreak = () => {
         World
       </span>
       <div>
-        'Hello'、'World'が連続したフラグメントとしてレンダリングされている
+        &apos;Hello&apos;、&apos;World&apos;が連続したフラグメントとしてレンダリングされている
       </div>
       <span className='box-decoration-clone bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2 ...'>
         Hello
