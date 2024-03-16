@@ -15,6 +15,19 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        "slide-top": "slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940)",
+      },
+      keyframes: {
+        "slide-top": {
+          "0%": {
+            transform: "translateY(0)",
+          },
+          to: {
+            transform: "translateY(-10px)",
+          },
+        },
+      },
     },
   },
   plugins: [],
