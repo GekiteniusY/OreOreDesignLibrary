@@ -1,6 +1,6 @@
 import React from "react";
 
-const GalleryButton = () => {
+const tempComponent = () => {
   return (
     <div className=''>
       Button
@@ -23,6 +23,16 @@ const GalleryButton = () => {
       <div></div>
       <div></div>
     </div>
+  );
+};
+
+const GalleryButton = () => {
+  return (
+    <>
+      <button className='bg-white text-black py-2 px-4 rounded-full border border-black'>
+        TEXT
+      </button>
+    </>
   );
 };
 
