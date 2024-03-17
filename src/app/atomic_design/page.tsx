@@ -1,4 +1,5 @@
 import React from "react";
+import { atomsList } from "../../../const/atomic-design";
 
 const AtomicDesign = () => {
   return (
@@ -13,27 +14,9 @@ const AtomicDesign = () => {
         Atoms
         <div>
           <ul>
-            <li>テキスト（Text）</li>
-            <li>ボタン（Button）</li>
-            <li>リンク（Link）</li>
-            <li>アイコン（Icon）</li>
-            <li>イメージ（Image）</li>
-            <li>インプットフィールド（Input field）</li>
-            <li>チェックボックス（Checkbox）</li>
-            <li>ラジオボタン（Radio button）</li>
-            <li>セレクトボックス（Select box）</li>
-            <li>スライダー（Slider）</li>
-            <li>ディバイダー（Divider）</li>
-            <li>プログレスバー（Progress bar）</li>
-            <li>スピナー（Spinner）</li>
-            <li>タグ（Tag）</li>
-            <li>アバター（Avatar）</li>
-            <li>レーティング（Rating）</li>
-            <li>アラート（Alert）</li>
-            <li>バッジ（Badge）</li>
-            <li>ラベル（Label）</li>
-            <li>リストアイテム（List item）</li>
-            <li>メニューアイテム（Menu item）</li>
+            {atomsList.map((atoms, index) => {
+              return <li key={index}>{atoms}</li>;
+            })}
           </ul>
         </div>
       </div>

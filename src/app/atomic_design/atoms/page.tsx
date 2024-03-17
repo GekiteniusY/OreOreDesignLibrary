@@ -1,21 +1,34 @@
 import React from "react";
 import GalleryButton from "../../../../component/atoms/button";
+import { atomsList } from "../../../../const/atomic-design";
 
 const Atoms = () => {
   return (
     <div>
       Atoms
-      <div className='grid grid-cols-3 gap-12 mt-5'>
-        <div className='w-auto h-auto bg-blue-500'>
+      {/* TODO: 画面サイズに応じてGridの列幅を制御する */}
+      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 mt-5'>
+        {atomsList.map((atom, index) => {
+          return (
+            <div
+              key={index}
+              className='w-full h-40 bg-blue-500'
+            >
+              <div>{atom}</div>
+              {/* TODO: コンポーネントを表示 */}
+              <div></div>
+            </div>
+          );
+        })}
+        <div className='w-full h-40 bg-blue-500'>
+          テキスト（Text）
+          <br />
+        </div>
+        <div className='w-full h-40 bg-blue-500'>
           ボタン（Button）
           <br />
           <GalleryButton></GalleryButton>
         </div>
-        <div className='w-10 h-10 bg-blue-500'>B</div>
-        <div className='w-10 h-10 bg-blue-500'>C</div>
-        <div className='w-10 h-10 bg-blue-500'>D</div>
-        <div className='w-10 h-10 bg-blue-500'>E</div>
-        <div className='w-10 h-10 bg-blue-500'>F</div>
       </div>
     </div>
   );
