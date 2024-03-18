@@ -1,10 +1,16 @@
 import React from "react";
-import GalleryButton from "../../../../component/atoms/button";
-import { atomsList } from "../../../../const/atomic-design";
+import { FullRoundedButton } from "../../../../component/atoms/button";
+import { H1Text, H2Text, H3Text } from "../../../../component/atoms/text";
 
 const atomsComponents = {
-  "テキスト（Text）": <GalleryButton></GalleryButton>,
-  "ボタン（Button）": <>Some Text Component</>,
+  "テキスト（Text）": (
+    <div>
+      <H1Text>TEXT</H1Text>
+      <H2Text>TEXT</H2Text>
+      <H3Text>TEXT</H3Text>
+    </div>
+  ),
+  "ボタン（Button）": <FullRoundedButton>TEXT</FullRoundedButton>,
   "リンク（Link）": <>Some Link Component</>,
   "アイコン（Icon）": <>Some Icon Component</>,
   "イメージ（Image）": <>Some Image Component</>,
@@ -39,7 +45,7 @@ const Atoms = () => {
               className='w-full h-40 bg-blue-400'
             >
               <p className='h-auto'>{atomName}</p>
-              <div className='flex bg-red-700 w-full h-40 items-center justify-center'>
+              <div className='flex  w-full h-40 items-center justify-center bg-gray-300 rounded-lg p-8 shadow-lg'>
                 {sampleComponent}
               </div>
             </div>
