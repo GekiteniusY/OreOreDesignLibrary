@@ -1,4 +1,4 @@
-export const atomsList = [
+export const atomsList: string[] = [
   "テキスト（Text）",
   "ボタン（Button）",
   "リンク（Link）",
