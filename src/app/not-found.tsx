@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ButtonPreviousPage from "../../component/molecules/button_previous_page";
+import ButtonPreviousPage from "../../component/molecules/button/button_previous_page";
 
 export default function NotFound() {
   return (
