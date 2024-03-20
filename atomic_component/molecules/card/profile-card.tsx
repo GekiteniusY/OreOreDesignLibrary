@@ -1,7 +1,5 @@
 import React from "react";
 
-const ProfileCard = () => {
+export const AD_ProfileCard = () => {
   return <div>ProfileCard</div>;
 };
-
-export default ProfileCard;

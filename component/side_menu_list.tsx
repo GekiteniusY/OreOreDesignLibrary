@@ -19,7 +19,7 @@ const SideMenu = () => {
       menuList = SideMenuListNextjs();
       break;
     case currentPathname.startsWith("/tailwindcss"):
-      menuList = SideMenuListAtomicDesign();
+      menuList = SideMenuListTailwindCSS();
       break;
     // ルートディレクトリ（Home）の場合はサイドメニューなしでリターン
     default:
@@ -30,7 +30,7 @@ const SideMenu = () => {
   // ルートディレクトリ以外の場合はサイドメニューをリターン
   sideMenu = (
     <>
-      <div className='hidden lg:block overflow-y-auto pl-10 pt-7'>
+      <div className='hidden lg:block pl-10 pt-7'>
         <div className='flex w-60 h-10 bg-red-300 opacity-80 text-nowrap'>
           {/* TODO: Atomic Design配下で全文検索機能を追加する */}
           全文検索の検索ボックス
@@ -71,10 +71,10 @@ const SideMenuListNextjs = () => {
   return (
     <>
       <div>
-        <Link href={"/nextjs/cash_strategy"}>Cache Strategy</Link>
+        <Link href={"/nextjs/caching"}>Caching</Link>
       </div>
       <div>
-        <Link href={"/nextjs/rendering_types"}>Rendering Types</Link>
+        <Link href={"/nextjs/rendering"}>Rendering</Link>
       </div>
       <div>
         <Link href={"/nextjs/functions"}>Functions</Link>

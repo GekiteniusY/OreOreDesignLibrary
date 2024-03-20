@@ -8,7 +8,7 @@ interface ButtonPreviousPageProps {
   children: React.ReactNode;
 }
 
-const ButtonPreviousPage: React.FC<ButtonPreviousPageProps> = ({
+const AD_PreviousPageButton: React.FC<ButtonPreviousPageProps> = ({
   children,
 }) => {
   const router = useRouter();
@@ -21,4 +21,4 @@ const ButtonPreviousPage: React.FC<ButtonPreviousPageProps> = ({
   return <button onClick={handleClick}>{children}</button>;
 };
 
-export default ButtonPreviousPage;
+export default AD_PreviousPageButton;

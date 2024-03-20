@@ -17,7 +17,8 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
-        "slide-top": "slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940)",
+        "slide-top":
+          "slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
       },
       keyframes: {
         "slide-top": {

@@ -1,5 +1,5 @@
 import React from "react";
-import { FullRoundedButton } from "../../../../atomic_component/atoms/button";
+import { AD_FullRoundedButton } from "../../../../atomic_component/atoms/button";
 import {
   H1Text,
   H2Text,
@@ -14,7 +14,7 @@ const atomsComponents = {
       <H3Text>TEXT</H3Text>
     </div>
   ),
-  "ボタン（Button）": <FullRoundedButton>TEXT</FullRoundedButton>,
+  "ボタン（Button）": <AD_FullRoundedButton>TEXT</AD_FullRoundedButton>,
   "リンク（Link）": <>Some Link Component</>,
   "アイコン（Icon）": <>Some Icon Component</>,
   "イメージ（Image）": <>Some Image Component</>,

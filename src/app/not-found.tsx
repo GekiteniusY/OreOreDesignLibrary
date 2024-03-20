@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ButtonPreviousPage from "../../atomic_component/molecules/button/button_previous_page";
+import AD_PreviousPageButton from "../../atomic_component/molecules/button/button";
 
 export default function NotFound() {
   return (
@@ -7,7 +7,7 @@ export default function NotFound() {
       <h2>Not Found</h2>
       <p>Could not find requested resource</p>
       <p>
-        <ButtonPreviousPage>Back to Previous Page?</ButtonPreviousPage>
+        <AD_PreviousPageButton>Back to Previous Page?</AD_PreviousPageButton>
       </p>
 
       <p>OR</p>
