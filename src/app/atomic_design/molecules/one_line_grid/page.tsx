@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid } from "../../../../../layout/grid/grid";
-import { MoveArrow } from "../../../../../component/atoms/symbol/arrow";
+import { MoveArrow } from "../../../../../atomic_component/atoms/symbol/arrow";
 
 const OneLineGrid = () => {
   return (

@@ -1,6 +1,10 @@
 import React from "react";
-import { FullRoundedButton } from "../../../../component/atoms/button";
-import { H1Text, H2Text, H3Text } from "../../../../component/atoms/text";
+import { FullRoundedButton } from "../../../../atomic_component/atoms/button";
+import {
+  H1Text,
+  H2Text,
+  H3Text,
+} from "../../../../atomic_component/atoms/text";
 
 const atomsComponents = {
   "テキスト（Text）": (

@@ -4,7 +4,8 @@ const config: Config = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./layout/**/*.{js,ts,jsx,tsx,mdx}",
-    "./component/**/*.{js,ts,jsx,tsx,mdx}",
+    "./component/**/*.{js,ts,jsx,tsx,mdx}", // リッチコンポーネント
+    "./atomic_component/**/*.{js,ts,jsx,tsx,mdx}", // プレーンコンポーネント
   ],
   theme: {
     extend: {

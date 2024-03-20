@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import LinkNavigationMenu from "../../component/molecules/link_navigation_menu";
+import LinkNavigationMenu from "../../atomic_component/molecules/link_navigation_menu";
+import Link from "next/link";
+import SideMenu from "../../component/side_menu_list";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,7 +46,13 @@ export default function RootLayout({
             <p className='ml-10 bg-slate-400'>なにかいれるかも</p>
           </nav>
         </header>
-        {children}
+        <div className='flex max-w-screen-2xl mx-auto px-4'>
+          <SideMenu></SideMenu>
+          <div className='block w-full px-10 pt-7'>
+            <div className='block h-7 w-full bg-blue-400'>ページ階層を表示</div>
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );
