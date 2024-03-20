@@ -1,14 +1,14 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
 import React from "react";
 
+// ページのパスによってサイドメニューのリストを出し分けをする
 const SideMenu = () => {
   const currentPathname: string = usePathname();
   console.log("currentPath is :", currentPathname);
   let menuList: React.JSX.Element;
-  let sideMenu: React.JSX.Element;
+  let sideMenu: React.JSX.Element = <></>;
 
   switch (true) {
     case currentPathname.startsWith("/atomic_design"):
@@ -21,11 +21,13 @@ const SideMenu = () => {
     case currentPathname.startsWith("/tailwindcss"):
       menuList = SideMenuListAtomicDesign();
       break;
+    // ルートディレクトリ（Home）の場合はサイドメニューなしでリターン
     default:
       menuList = <></>;
-      break;
+      return sideMenu;
   }
 
+  // ルートディレクトリ以外の場合はサイドメニューをリターン
   sideMenu = (
     <>
       <div className='hidden lg:block overflow-y-auto pl-10 pt-7'>
@@ -37,8 +39,6 @@ const SideMenu = () => {
       </div>
     </>
   );
-
-  console.log(menuList);
 
   return sideMenu;
 };
