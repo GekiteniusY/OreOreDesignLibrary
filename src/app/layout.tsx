@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import LinkNavigationMenu from "../../atomic_component/molecules/link_navigation_menu";
-import Link from "next/link";
 import SideMenu from "../../component/side_menu_list";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,6 +54,7 @@ export default function RootLayout({
           </div>
         </div>
       </body>
+      <GoogleAnalytics gaId='GTM-N2B5LJGM' />
     </html>
   );
 }
