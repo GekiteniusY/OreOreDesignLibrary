@@ -9,6 +9,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      // colorsはbg-から始まる
+      // background:の場合はbg-background-となる
+      colors: {
+        // TODO: 配色を作成する
+        background: {
+          blue: "#1fb6ff",
+        },
+        // blue: "#1fb6ff",
+        // purple: "#7e5bef",
+        // pink: "#ff49db",
+        // orange: "#ff7849",
+        // green: "#13ce66",
+        // yellow: "#ffc82c",
+        // "gray-dark": "#273444",
+        // gray: "#8492a6",
+        // "gray-light": "#d3dce6",
+      },
       backgroundImage: {
         // TODO: add explanation
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

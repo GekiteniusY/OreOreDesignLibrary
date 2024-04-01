@@ -23,9 +23,9 @@ export default function RootLayout({
         <meta charSet='utf-8' />
         <meta title='Ore Ore Play Ground' />
       </head>
-      <body className={`${inter.className}`}>
+      <body className={`${inter.className} bg-slate-50`}>
         {/* main header */}
-        <header className='block justify-center items-center w-full bg-slate-600'>
+        <header className='block justify-center items-center w-full bg-slate-100'>
           <h1 className=' h-10'>This site is a personal playground.</h1>
 
           {/* navigation */}
@@ -46,10 +46,12 @@ export default function RootLayout({
             <p className='ml-10 bg-slate-400'>なにかいれるかも</p>
           </nav>
         </header>
-        <div className='flex max-w-screen-2xl mx-auto px-4'>
+        <div className='flex max-w-screen-2xl mx-auto px-4 bg-slate-200'>
           <SideMenu></SideMenu>
           <div className='block w-full px-10 pt-7'>
-            <div className='block h-7 w-full bg-blue-400'>ページ階層を表示</div>
+            <div className='block h-7 w-full bg-slate-300'>
+              ページ階層を表示 Ex, TailwindCSS/Effects
+            </div>
             {children}
           </div>
         </div>
