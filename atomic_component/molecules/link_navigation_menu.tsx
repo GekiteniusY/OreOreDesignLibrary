@@ -12,7 +12,7 @@ const LinkNavigationMenu: React.FC<LinkNavigationMenu> = ({
   link,
 }) => {
   return (
-    <div className='ml-4 hover:bg-blue-500 rounded-md'>
+    <div className='ml-4 hover:bg-slate-400 rounded-md'>
       <NavigationText>
         <Link href={`${link}`}>{children}</Link>
       </NavigationText>

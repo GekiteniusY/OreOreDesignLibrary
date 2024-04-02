@@ -3,13 +3,14 @@ import { atomsList } from "../../../const/atomic-design";
 
 const AtomicDesign = () => {
   return (
-    <div>
-      Atomic Design
+    <div className=''>
+      <h1 className='text-5xl'>Atomic Design</h1>
+      <br />
       <div>
         pinned contents
         <div></div>
       </div>
-      <hr></hr>
+      <br />
       <div>
         Atoms
         <div>

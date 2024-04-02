@@ -31,11 +31,11 @@ const SideMenu = () => {
   sideMenu = (
     <>
       <div className='hidden lg:block pl-10 pt-7'>
-        <div className='flex w-60 h-10 bg-red-300 opacity-80 text-nowrap'>
+        <div className='flex w-60 h-10 bg-slate-400 opacity-80 text-nowrap'>
           {/* TODO: Atomic Design配下で全文検索機能を追加する */}
           全文検索の検索ボックス
         </div>
-        {menuList}
+        <div className='bg-slate-300'>{menuList}</div>
       </div>
     </>
   );

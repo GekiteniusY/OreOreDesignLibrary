@@ -8,7 +8,7 @@ const NavigationText: React.FC<NavigationText> = ({ children }) => {
   return (
     <>
       <li className=''>
-        <div className='hover:text-red-700 p-1'>{children}</div>
+        <div className='hover:text-slate-700 p-1'>{children}</div>
       </li>
     </>
   );

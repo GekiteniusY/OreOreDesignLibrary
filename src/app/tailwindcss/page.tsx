@@ -2,11 +2,15 @@ import Link from "next/link";
 
 const TailwindCSS = () => {
   return (
-    <div className='w-full bg-blue-400'>
+    <div className='w-full'>
       <h1 className='text-5xl'>TailwindCSS playground</h1>
-      <br />
       <p>TailwindCSSの各種パラメータのハンズオンなどを行う</p>
-
+      <br />
+      <div>
+        pinned contents
+        <div></div>
+      </div>
+      <br />
       <h2>参考にしたサイトなど</h2>
       <ul>
         <li>
