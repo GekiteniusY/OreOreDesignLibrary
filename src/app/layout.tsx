@@ -1,9 +1,18 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+
+// Google Analytics
+import { GoogleAnalytics } from "@next/third-parties/google";
+
+// Components
 import LinkNavigationMenu from "../../atomic_component/molecules/link_navigation_menu";
 import SideMenu from "../../component/side_menu_list";
-import { GoogleAnalytics } from "@next/third-parties/google";
+
+// Font Awsome
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -46,9 +55,9 @@ export default function RootLayout({
             <p className='ml-10 bg-slate-400'>なにかいれるかも</p>
           </nav>
         </header>
-        <div className='flex max-w-screen-2xl mx-auto px-4 bg-slate-200'>
+        <div className='flex max-w-screen-2xl px-4 bg-slate-200'>
           <SideMenu></SideMenu>
-          <div className='block w-full px-10 pt-7'>
+          <div className='block w-full px-7 pt-7'>
             {/* TODO: Homeディレクトリの場合は不要かもしれない */}
             <div className='flex h-auto pb-2 items-center w-full bg-slate-300'>
               <p>ページ階層を表示 Ex, TailwindCSS/Effects</p>
