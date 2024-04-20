@@ -7,9 +7,15 @@ jobs:
   # ジョブのIDで、ユニークであればどのような文字列でもOK
   job1:
     # ジョブの名前
-    name: Hello World
+    name: Hello World 1
     # Github hostedのランナーを利用します、今回はUbuntuのLatest
     runs-on: ubuntu-latest
     # ジョブの中で具体的にどのような処理を行うかの記述
     steps:
-      - run: echo "Hello, World!"
+      - run: echo "Hello, World! 1"
+
+  job2:
+    name: Hello World 2
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, World! 2"
