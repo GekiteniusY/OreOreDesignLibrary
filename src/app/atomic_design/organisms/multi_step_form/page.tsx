@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 
 // TODO: Chat GPTでフォームの作成方法について調べた内容を確認する
