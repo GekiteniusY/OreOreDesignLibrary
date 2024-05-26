@@ -48,3 +48,5 @@ function MultiStepForm() {
     </div>
   );
 }
+
+export default MultiStepForm;
